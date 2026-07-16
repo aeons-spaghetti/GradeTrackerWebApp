@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GradeTrackerWebAppApplication {
+public class GradeTrackerWebApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(GradeTrackerWebAppApplication.class, args);
+        SpringApplication.run(GradeTrackerWebApp.class, args);
     }
 
 }
