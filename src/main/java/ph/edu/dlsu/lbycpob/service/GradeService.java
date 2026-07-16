@@ -37,4 +37,9 @@ public class GradeService {
                 letterRank
         );
     }
+
+    // Validates ID number and returns result message
+    public String verifyIdNumber(String idNumber){
+        return IDVerifier.validateID(idNumber == null ? "" : idNumber.trim());
+    }
 }
