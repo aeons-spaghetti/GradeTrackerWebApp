@@ -11,5 +11,12 @@ public class GradeService {
 
     public Student buildStudent(StudentFormDTO dto){
 
+        // Replaces inputLabPerformance(). This computes the average of five modules
+        double[] moduleScores = {
+                dto.getModule1(), dto.getModule2(), dto.getModule3(),
+                dto.getModule4(), dto.getModule5()
+        };
+        double labPerformance = GradeCalculator.computeAverage(moduleScores);
+
     }
 }
